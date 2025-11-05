@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Interactiva: Componentes de un Prompt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Actividad Interactiva: Componentes de un Prompt</h1>
+            <p class="subtitle">Aprende a construir prompts efectivos para IA mediante esta actividad de arrastrar y soltar</p>
+        </header>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+        </div>
+        <div class="progress-text" id="progress-text">Ejercicio 1 de 6</div>
+        
+        <section class="instructions">
+            <h2><span class="icon">📋</span> Instrucciones</h2>
+            <p>Arrastra cada fragmento de prompt a su componente correspondiente. Los fragmentos aparecen en orden aleatorio en cada ejercicio para aumentar la dificultad. Cuando hayas asociado todos, haz clic en "Verificar Respuestas" para comprobar tu conocimiento.</p>
+        </section>
+        
+        <div class="difficulty-notice">
+            <span class="icon">🎯</span> <strong>Modo Desafiante:</strong> Los fragmentos se muestran en orden aleatorio automáticamente
+        </div>
+        
+        <div class="exercise-info" id="exercise-info">
+            <h3><span class="icon">🎯</span> Área: <span id="exercise-area">Gastronomía</span></h3>
+            <p id="exercise-description">Construye un prompt efectivo para obtener información sobre técnicas culinarias.</p>
+        </div>
+        
+        <div class="activity-area">
+            <div class="fragments-container">
+                <h3><span class="icon">🗃️</span> Fragmentos de Prompt</h3>
+                <div class="random-notice">
+                    <span class="icon">🔀</span> Orden aleatorio en cada ejercicio
+                </div>
+                <div id="fragments-list">
+                    <!-- Los fragmentos se cargarán dinámicamente en orden aleatorio -->
+                </div>
+            </div>
+            
+            <div class="components-container">
+                <h3><span class="icon">🎯</span> Componentes de Prompt</h3>
+                <div class="component" data-component="role">
+                    <strong>Rol:</strong> 
+                    <div class="drop-zone">[Arrastra aquí el fragmento correspondiente]</div>
+                </div>
+                <div class="component" data-component="task">
+                    <strong>Tarea:</strong> 
+                    <div class="drop-zone">[Arrastra aquí el fragmento correspondiente]</div>
+                </div>
+                <div class="component" data-component="format">
+                    <strong>Formato:</strong> 
+                    <div class="drop-zone">[Arrastra aquí el fragmento correspondiente]</div>
+                </div>
+                <div class="component" data-component="context">
+                    <strong>Contexto / Audiencia:</strong> 
+                    <div class="drop-zone">[Arrastra aquí el fragmento correspondiente]</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons-container">
+            <button id="verify-btn">
+                <span class="icon">✅</span> Verificar Respuestas
+            </button>
+            <button id="next-btn" class="hidden">
+                <span class="icon">➡️</span> Siguiente Ejercicio
+            </button>
+            <button id="reset-btn">
+                <span class="icon">🔄</span> Reiniciar Ejercicio
+            </button>
+        </div>
+        
+        <div class="result" id="result"></div>
+        
+        <div class="completed-prompt hidden" id="completed-prompt">
+            <h4><span class="icon">📝</span> Prompt Completado</h4>
+            <div class="prompt-preview" id="prompt-preview"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Actividad educativa para Introducción a la IA - Componentes de un Prompt efectivo</p>
+    </footer>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
